@@ -1,10 +1,6 @@
 const text = "testing. text is here hello. this is the third sentence.";
 
 function textToBinary() {
-  var output = document.getElementById("box1");
-  var outputB = document.getElementById("box2");
-  var output2 = document.getElementById("box3");
-  var outputB2 = document.getElementById("box4");
   let binaryArr = [];
   let sentArr = [];
   binaryArr[0] = "";
@@ -22,9 +18,8 @@ function textToBinary() {
     	sentArr[counter] += text.charAt(i);
     } 	 
   }
-  
-  output.value = sentArr[0];
-  outputB.value = binaryArr[0];
-  output2.value = sentArr[counter - 1];
-  outputB2.value = binaryArr[counter - 1]
+  return {
+  	 "text_array" : sentArr,
+  	 "binar_array" : binaryArr
+  };
 };

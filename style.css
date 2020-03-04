@@ -1,4 +1,11 @@
-#all{
-	text-align: center;
-	color: red;
+#main{
+	word-wrap: break-word;
+	margin-right: 10%;
+	margin-left: 10%;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 24px;
+}
+body{
+	background-color: black;
+	color: white;
 }

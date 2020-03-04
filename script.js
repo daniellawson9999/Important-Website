@@ -116,6 +116,7 @@ document.addEventListener('mousemove', function(event) {
         if (id != currentSpan.getAttribute("id")){
             text = document.createTextNode(binary_array[id])
             span.appendChild(text)
+            span.style.color = 'white';
         } else{
             content = text_array[id];
             text = document.createTextNode(content)
@@ -138,6 +139,7 @@ document.addEventListener('mousemove', function(event) {
             span.appendChild(document.createElement("br"))
             span.appendChild(document.createElement("br"))
             span.appendChild(document.createElement("br"))
+            span.style.color = 'red';
         }
 
     }

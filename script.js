@@ -63,9 +63,33 @@ var p = document.getElementById("main")
 for (var i = 0; i < binary_array.length; i++) {
     var newSpan = document.createElement("span");
     newSpan.setAttribute("id", i);
-    var text = document.createTextNode(binary_array[i]);
-    newSpan.appendChild(text)
+    if (i == 0){
+        var text = document.createTextNode(text_array[i])
+        newSpan.appendChild(document.createElement("br"))
+        newSpan.appendChild(document.createElement("br"))
+        newSpan.appendChild(document.createElement("br"))
+        newSpan.appendChild(document.createElement("br"))
+        newSpan.appendChild(document.createElement("br"))
+        newSpan.appendChild(document.createElement("br"))
+        newSpan.appendChild(document.createElement("br"))
+        newSpan.appendChild(document.createElement("br"))
+        newSpan.appendChild(text)
+        newSpan.style.color = "red";
+        newSpan.appendChild(document.createElement("br"))
+        newSpan.appendChild(document.createElement("br"))
+        newSpan.appendChild(document.createElement("br"))
+        newSpan.appendChild(document.createElement("br"))
+        newSpan.appendChild(document.createElement("br"))
+        newSpan.appendChild(document.createElement("br"))
+        newSpan.appendChild(document.createElement("br"))
+        newSpan.appendChild(document.createElement("br"))
+    }
+    else{
+        var text = document.createTextNode(binary_array[i]);
+        newSpan.appendChild(text)
+    }
     p.appendChild(newSpan);
+
 }
 
 

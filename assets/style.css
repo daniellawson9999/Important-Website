@@ -42,7 +42,7 @@ h1{
 	-webkit-appearance: none;  /* Override default CSS styles */
 	appearance: none;
 	width: 100%; /* Full-width */
-	height: 8px; /* Specified height */
+	height: 15px; /* Specified height */
 	background: #FFFFFF; /* Grey background */
 	outline: none; /* Remove outline */
 	opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
@@ -60,14 +60,14 @@ h1{
 	-webkit-appearance: none; /* Override default look */
 	appearance: none;
 	width: 25px; /* Set a specific slider handle width */
-	height: 8px; /* Slider handle height */
+	height: 15px; /* Slider handle height */
 	background: rgb(255, 0, 0); /* Green background */
 	cursor: pointer; /* Cursor on hover */
   }
   
   .slider::-moz-range-thumb {
 	width: 25px; /* Set a specific slider handle width */
-	height: 8px; /* Slider handle height */
+	height: 15px; /* Slider handle height */
 	background: #FF0000; /* Green background */
 	cursor: pointer; /* Cursor on hover */
   }

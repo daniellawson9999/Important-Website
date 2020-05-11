@@ -1,4 +1,34 @@
-// cool function
+// bar code
+var combustion = document.getElementById("combustion");
+var slider = document.getElementById("myRange");
+
+var count = 0;
+slider.oninput = function() {
+    console.log(slider.getAttribute("value"));
+    if (this.value == this.max) {
+        this.disabled = true;
+        this.value = this.min;          
+        // increase font size
+        var style = window.getComputedStyle(combustion, null).getPropertyValue('font-size');
+        var fontSize = parseFloat(style); 
+        combustion.style.fontSize = (fontSize + 30) + 'px'; 
+        count++; 
+        if (count >= 5) {
+            window.location.href = "./home";
+            count = 0;
+        }
+        this.disabled = false;
+    }
+}
+
+
+
+
+
+
+
+
+// cool function, binary code
 
 function textToBinary(text) {
     let binaryArr = [];

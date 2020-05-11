@@ -71,3 +71,16 @@ h1{
 	background: #FF0000; /* Green background */
 	cursor: pointer; /* Cursor on hover */
   }
+
+  /* explosion */
+
+  .explode {
+	/*width:200vw;*/
+	animation:letter_explode 1s 0s forwards infinite linear;
+	animation-iteration-count: 1;	
+}
+
+  @keyframes letter_explode {
+    0% {letter-spacing:0.1em;opacity:1;}
+    100% {letter-spacing:1em;opacity:0;}
+}

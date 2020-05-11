@@ -13,13 +13,24 @@ slider.oninput = function() {
         var fontSize = parseFloat(style); 
         combustion.style.fontSize = (fontSize + 30) + 'px'; 
         count++; 
-        if (count >= 5) {
-            window.location.href = "./home";
+        if (count >= 3) {
+            combustion.style.fontSize = (fontSize + 50) + 'px'; 
+            combustion.classList.add("explode");
             count = 0;
         }
         this.disabled = false;
     }
 }
+
+function endFunc(){
+    combustion.classList.remove("explode");
+    window.location.href = "./home";
+}
+// Code for Chrome, Safari and Opera
+combustion.addEventListener("webkitAnimationEnd", endFunc);
+
+// Standard syntax
+combustion.addEventListener("animationend", endFunc);
 
 
 

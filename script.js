@@ -1,4 +1,6 @@
 // bar code
+var body = document.getElementById("body");
+var content = document.getElementById("content");
 var combustion = document.getElementById("combustion");
 var slider = document.getElementById("myRange");
 
@@ -15,7 +17,8 @@ slider.oninput = function() {
         count++; 
         if (count >= 3) {
             combustion.style.fontSize = (fontSize + 50) + 'px'; 
-            combustion.classList.add("explode");
+            content.classList.add("explode");
+            body.classList.add("flash");
             count = 0;
         }
         this.disabled = false;
@@ -23,14 +26,15 @@ slider.oninput = function() {
 }
 
 function endFunc(){
-    combustion.classList.remove("explode");
+    content.classList.remove("explode");
+    body.classList.remove("flash");
     window.location.href = "./home";
 }
 // Code for Chrome, Safari and Opera
-combustion.addEventListener("webkitAnimationEnd", endFunc);
+content.addEventListener("webkitAnimationEnd", endFunc);
 
 // Standard syntax
-combustion.addEventListener("animationend", endFunc);
+content.addEventListener("animationend", endFunc);
 
 
 

@@ -76,11 +76,23 @@ h1{
 
   .explode {
 	/*width:200vw;*/
-	animation:letter_explode 1s 0s forwards infinite linear;
+	animation:letter_explode 2s 0s forwards infinite linear;
 	animation-iteration-count: 1;	
 }
 
   @keyframes letter_explode {
     0% {letter-spacing:0.1em;opacity:1;}
     100% {letter-spacing:1em;opacity:0;}
+}
+
+/* flashing */
+
+.flash{
+	animation:color_flash .5s 0s forwards infinite linear;
+}
+
+@keyframes color_flash {
+	0% {background-color: #FF0000;}
+	50% {background-color: #DB4500;}
+    100% {background-color: black;}
 }

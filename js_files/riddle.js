@@ -5,10 +5,9 @@ function validate() {
 	var answer = "dan's abs";
 	var n = answer.localeCompare(input);
 	if (n == 0)  {
-		 location.href = ("success.html");
+		 location.href = ("../pages/riddle/success.html");
 	} else {
-		 location.href = ("failure.html");
-		
+		 location.href = ("../pages/riddle/failure.html");
 	}
 	
 	

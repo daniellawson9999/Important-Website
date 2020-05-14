@@ -96,3 +96,13 @@ h1{
 	50% {background-color: #DB4500;}
     100% {background-color: black;}
 }
+
+/* riddle style stuff */
+
+#riddle {
+	text-align: center;
+}
+
+#riddle_ans {
+	text-align: center;
+}
